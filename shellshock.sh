@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 if [[ -z "$1" || -z "$2" || -z "$3" ]]; then
   printf "\nUsage: bash $0 <url> <lhost> <lport>\n"
   exit 0
