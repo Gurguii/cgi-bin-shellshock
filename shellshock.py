@@ -1,4 +1,3 @@
-from doctest import FAIL_FAST
 import requests
 import argparse
 import sys
